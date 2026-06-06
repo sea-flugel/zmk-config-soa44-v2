@@ -46,14 +46,6 @@
             label = "TO_LAYER_0";
         };
 
-        nihongo: nihongo {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RIGHT_ALT>, <&macro_tap_time 100>, <&kp GRAVE>;
-
-            label = "NIHONGO";
-        };
-
         kakko: kakko {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -83,10 +75,10 @@
 
         default {
             bindings = <
-&kp ESCAPE      &kp Q         &kp W         &kp E        &kp R        &kp T      &kp Y     &kp U          &kp I  &kp O      &kp P        &kp MINUS
-&mt LCTRL TAB   &kp A         &kp S         &kp D        &kp F        &kp G      &kp H     &kp J          &kp K  &kp L      &kp COLON    &kp ENTER
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C        &kp V        &kp B      &kp N     &kp N          &kp M  &kp COMMA  &kp PERIOD   &kakko
-                &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 SPACE  &lt 5 SPACE  &lt 2 DEL  &nihongo  &kp BACKSPACE                    &lt 6 SLASH
+&kp ESCAPE      &kp Q         &kp W         &kp E        &kp R        &kp T      &kp Y      &kp U          &kp I  &kp O      &kp P        &kp MINUS
+&mt LCTRL TAB   &kp A         &kp S         &kp D        &kp F        &kp G      &kp H      &kp J          &kp K  &kp L      &kp COLON    &kp ENTER
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C        &kp V        &kp B      &kp N      &kp N          &kp M  &kp COMMA  &kp PERIOD   &kakko
+                &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 SPACE  &lt 5 SPACE  &lt 2 DEL  &kp GRAVE  &kp BACKSPACE                    &lt 6 SLASH
             >;
         };
 
