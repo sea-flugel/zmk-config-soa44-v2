@@ -65,6 +65,8 @@
             #binding-cells = <0>;
             bindings =
                 <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS>,
+                <&macro_tap>,
+                <&kp LEFT_ARROW>,
                 <&macro_tap>;
 
             label = "KAKKO";
