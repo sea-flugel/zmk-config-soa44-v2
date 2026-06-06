@@ -57,6 +57,13 @@
 
             label = "KAKKO";
         };
+
+        nihongo: nihongo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp GRAVE>;
+            label = "NIHONGO";
+        };
     };
 
     behaviors {
