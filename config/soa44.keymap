@@ -49,7 +49,13 @@
         nihongo: nihongo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp GRAVE>, <&macro_press>;
+            bindings =
+                <&kp LEFT_ALT>,
+                <&macro_press>,
+                <&kp GRAVE>,
+                <&macro_tap>,
+                <&kp LEFT_ALT>,
+                <&macro_release>;
 
             label = "NIHONGO";
         };
@@ -59,7 +65,7 @@
             #binding-cells = <0>;
             bindings =
                 <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS>,
-                <&macro_press>;
+                <&macro_tap>;
 
             label = "KAKKO";
         };
