@@ -49,7 +49,7 @@
         nihongo: nihongo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp GRAVE>, <&macro_tap>;
+            bindings = <&kp LALT>, <&macro_press>, <&kp GRAVE>;
 
             label = "NIHONGO";
         };
